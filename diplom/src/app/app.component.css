@@ -1,0 +1,65 @@
+.mainCont {
+    width: 100%;
+    min-width: 1000px;
+}
+.mainCont .menu{
+    background: #f9f9f9;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainCont .menu .logo{
+    background-image: url("main-page/images/logo.png");
+    height: 103px;
+    width: 128px;
+}
+.mainCont .menu .linksCont a{
+    font-size: 30px;
+    color: #000000;
+    margin-right: 50px;
+}
+.mainCont .menu .linksCont a:nth-child(4){
+    margin-right: 0;
+}
+.mainCont .menu .linksCont a:hover{
+    color: #c0392b;
+}
+.socialCont ul {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("main-page/images/social.png") no-repeat;
+    margin-right: 35px;
+}
+.icon:nth-child(4){
+    margin: 0;
+}
+.socialCont .search {
+    background-position: 0 0;
+}
+.socialCont .vk {
+    background-position: -74px 0;
+}
+.socialCont .vk:hover{
+    background: url("main-page/images/vkHover.png") no-repeat;
+}
+.socialCont .fb {
+    background-position: -148px 0;
+}
+.socialCont .fb:hover{
+    background: url("main-page/images/fbHover.png") no-repeat;
+}
+.socialCont .inst {
+    background-position: -221px 0;
+}
+.socialCont .inst:hover{
+    background: url("main-page/images/instHover.png") no-repeat;
+}
+.mainCont .menu .linksCont .active{
+    color: #c0392b;
+}

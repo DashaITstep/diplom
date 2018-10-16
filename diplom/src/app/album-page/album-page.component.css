@@ -1,0 +1,90 @@
+.mainCont{
+    width: 100%;
+}
+.albumName{
+    height: 120px;
+    width: 100%;
+    padding-top: 20px;
+    background-size: contain;
+    background-position: center center;
+}
+.date{
+    font-size: 24px;
+    color: #f9f9f9;
+    margin: 10px auto;
+    width: 100px;
+    text-align: center;
+}
+.caption{
+    width: 390px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 48px;
+    color: #f9f9f9;
+}
+.caption .lines{
+    position: relative;
+    height: 15px;
+    width: 60px;
+}
+.caption .lines:before,:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: #c0392b;
+}
+.caption .left:before{
+    width: 60px;
+    background: #f9f9f9;
+    bottom: 0;
+}
+.caption .left:after{
+    width: 45px;
+    right: 0;
+}
+.caption .right:before{
+    width: 45px;
+    bottom: 0;
+}
+.caption .right:after{
+    width: 60px;
+    background: #f9f9f9;
+}
+.photosCont{
+    max-width: 1180px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 485px);
+    position: relative;
+}
+.photosCont .previewPhoto{
+    height: 295px;
+    width: 295px;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+.footer{
+    height: 125px;
+    padding-top: 30px;
+    background-size: cover;
+    background-position: center center;
+}
+.footer .textCont{
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer p{
+    font-size: 30px;
+    color: white;
+}
+.footer .year{
+    font-size: 24px;
+}

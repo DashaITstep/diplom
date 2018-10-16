@@ -1,0 +1,22 @@
+<div class="mainCont">
+  <div class="leftPanel">
+    <div class="caption">
+      <div class="lines left"></div>
+      <p>П О Р Т Ф О Л И О</p>
+      <div class="lines right"></div>
+    </div>
+  </div>
+  <div class="photosCont">
+    <div class="mover" [style.width]="moverWidth">
+      <div *ngFor="let photo of portfolioPreviewPhotos" class="previewPhoto" [style.backgroundImage]="'url('+ photo.url +')'">
+        <div class="hoverCont">
+          <p>{{photo.name}}</p>
+          <p>{{photo.date}}</p>
+          <a routerLink="/album/{{photo.album_id}}">ПОДРОБНЕЕ</a>
+        </div>
+      </div>
+    </div>
+    <div class="btn rightBtn" (mousedown)="next()"></div>
+    <div class="btn leftBtn" (click)="prev()"></div>
+  </div>
+</div>

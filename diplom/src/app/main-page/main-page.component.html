@@ -1,0 +1,36 @@
+<div class="sliderCont">
+  <app-slider [slides]="sliderPhotos" ></app-slider>
+</div>
+<div class="portfolioCont">
+  <div class="caption">
+    <div class="lines left"></div>
+    <p>ПОРТФОЛИО</p>
+    <div class="lines right"></div>
+  </div>
+  <div class="imagesCont">
+      <div *ngFor="let photo of portfolioPreviewPhotos" class="previewPhoto" [style.backgroundImage]="'url('+ photo.url +')'">
+        <div class="hoverCont">
+          <p>{{photo.name}}</p>
+          <p>{{photo.date}}</p>
+          <a routerLink="/album/{{photo.album_id}}">ПОДРОБНЕЕ</a>
+        </div>
+      </div>
+  </div>
+  <a class="detailsBtn" routerLink="/portfolio">ПОДРОБНЕЕ</a>
+</div>
+<app-services></app-services>
+<div class="contactsCont">
+  <div class="caption">
+    <div class="lines left"></div>
+    <p>КОНТАКТЫ</p>
+    <div class="lines right"></div>
+  </div>
+  <app-contacts></app-contacts>
+</div>
+<div class="footer">
+  <div class="textCont">
+    <p>Photographer Stanislav Gubkin</p>
+    <p class="year">2018</p>
+  </div>
+</div>
+

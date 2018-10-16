@@ -1,0 +1,22 @@
+<div class="mainCont">
+    <nav class="menu">
+        <a class="logo" routerLink=""></a>
+        <nav class="linksCont" >
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ОБО МНЕ</a>
+            <a routerLink="/portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ПОРТФОЛИО</a>
+            <a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">УСЛУГИ</a>
+            <a routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">КОНТАКТЫ</a>
+        </nav>
+        <nav class="socialCont">
+            <ul>
+                <li><a href="#" class="icon search"></a></li>
+                <li><a href="#" class="icon vk"></a></li>
+                <li><a href="#" class="icon fb"></a></li>
+                <li><a href="#" class="icon inst"></a></li>
+            </ul>
+        </nav>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
+
+

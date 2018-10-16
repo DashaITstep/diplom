@@ -1,0 +1,143 @@
+.mainCont{
+    width: 100%;
+}
+.leftPanel{
+    width: 120px;
+    height: 960px;
+    background: #f9f9f9;
+    float: left;
+}
+.caption{
+    width: 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 215px;
+    font-size: 48px;
+    color: #000000;
+}
+.caption p{
+    text-align: center;
+}
+.caption .lines{
+    position: relative;
+    height: 60px;
+    width: 15px;
+}
+.caption .lines:before,:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    background: #000000;
+}
+.caption .left:before{
+    height: 60px;
+    bottom: 0;
+}
+.caption .left:after{
+    height: 45px;
+    background: #c0392b;
+    right: 0;
+    bottom: 0;
+}
+.caption .right:before{
+    height: 45px;
+    background: #c0392b;
+    top: 0;
+    right: 0;
+}
+.caption .right:after{
+    height: 60px;
+    top: 0;
+}
+.mainCont .photosCont{
+    height: 960px;
+    width: calc(100% - 120px);
+    overflow: hidden;
+    position: relative;
+}
+.mainCont .photosCont .mover{
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.mainCont .photosCont .mover .previewPhoto{
+    width: 360px;
+    background-size: cover;
+    background-position: center center;
+}
+.mainCont .photosCont .mover .previewPhoto .hoverCont{
+    height: 960px;
+    text-align: center;
+    padding-top: 420px;
+    color: #f9f9f9;
+    font-size: 48px;
+    background: #7c7c7c;
+    opacity: 0.7;
+    display: none;
+}
+.mainCont .photosCont .mover .previewPhoto:hover .hoverCont{
+    display: block;
+}
+.mainCont .photosCont .mover .previewPhoto .hoverCont a{
+    display: block;
+    width: 170px;
+    height: 70px;
+    color: #f9f9f9;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: #f9f9f9 solid 5px;
+    font-size: 30px;
+    padding-top: 15px;
+}
+.btn{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50px;
+    cursor: pointer;
+}
+.rightBtn{
+    background: #c0392b;
+    right: 50px;
+    background-image: url("images/arrowRight.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.leftBtn{
+    left: 50px;
+    background: #ffffff;
+    background-image: url("images/arrowLeft.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.photoCont{
+    height: 90vh;
+    width: 80%;
+    top: 5%;
+    left: 10.5%;
+    display: none;
+    position: fixed;
+    transition: all 1s;
+}
+.arrow{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background: #c0392b;
+    bottom: 10%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.arrowRight{
+    background-image: url("images/arrowRight.png");
+    right: 45%;
+}
+.arrowLeft{
+    background: #ffffff;
+    background-image: url("images/arrowLeft.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 45%;
+}
+.closeBtn{
+    position: absolute;
+    width: 20px;
+    top: 3%;
+    cursor: pointer;
+    right: 2%;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+.photo{
+    height: 100%;
+    width: 100%;
+}

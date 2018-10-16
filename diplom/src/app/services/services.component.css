@@ -1,0 +1,106 @@
+.servicesCont{
+    width: 100%;
+    background: url('images/servicesBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+.caption{
+    width: 390px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    color: #f9f9f9;
+}
+.caption .lines{
+    position: relative;
+    height: 15px;
+    width: 60px;
+}
+.caption .lines:before,:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: #f9f9f9;
+}
+.caption .left:before{
+    width: 60px;
+    bottom: 0;
+}
+.caption .left:after{
+    width: 45px;
+    background: #c0392b;
+    right: 0;
+}
+.caption .right:before{
+    width: 45px;
+    background: #c0392b;
+    bottom: 0;
+}
+.caption .right:after{
+    width: 60px;
+}
+.services{
+    max-width: 1110px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service{
+    width: 280px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.service img{
+    display: block;
+    height: 128px;
+    width: 127px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+.service1{
+    background: url("images/service1.png");
+}
+.service2{
+    background: url("images/service2.png");
+}
+.service3{
+    background: url("images/service3.png");
+}
+.service4{
+    background: url("images/service4.png");
+}
+.service5{
+    background: url("images/service5.png");
+}
+.service6{
+    background: url("images/service6.png");
+}
+.service7{
+    background: url("images/service7.png");
+}
+.service8{
+    background: url("images/service8.png");
+}
+.service9{
+    background: url("images/service9.png");
+}
+.service10{
+    background: url("images/service10.png");
+}
+.service11{
+    background: url("images/service11.png");
+}
+.service12{
+    background: url("images/service12.png");
+}
+.servicesCont .services .service p{
+    font-size: 30px;
+    color: #f9f9f9;
+    margin: 20px 0;
+}

@@ -1,0 +1,18 @@
+<div class="contactsCont">
+  <div class="formCont">
+    <div class="socialLinks">
+      <a class="socLink vk"></a>
+      <a class="socLink fb"></a>
+      <a class="socLink inst"></a>
+    </div>
+    <div class="form">
+      <p>ОБРАТНАЯ СВЯЗЬ</p>
+      <p class="warning" #warning>Заполните все поля!</p>
+      <input type="text" placeholder="ИМЯ" class="name" [(ngModel)]="name">
+      <input type="text" placeholder="EMAIL/НОМЕР ТЕЛЕФОНА" class="email" [(ngModel)]="phone">
+      <input type="text" placeholder="ТЕКСТ СООБЩЕНИЯ" class="text" [(ngModel)]="text">
+      <input type="button" value="ОТПРАВИТЬ" (click)="sendLead()">
+    </div>
+  </div>
+</div>
+

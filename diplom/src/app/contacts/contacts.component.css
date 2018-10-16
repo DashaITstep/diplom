@@ -1,0 +1,113 @@
+.contactsCont{
+    background: #f9f9f9;
+    padding-top: 40px;
+
+}
+.contactsCont .formCont{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+}
+.contactsCont .formCont .socialLinks .socLink{
+    display: block;
+    width: 170px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: #c0392b solid 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contactsCont .formCont .socialLinks .vk{
+    background-image: url("images/vk.png");
+}
+.contactsCont .formCont .socialLinks .fb{
+    margin-top: 30px;
+    background-image: url("images/fb.png");
+}
+.contactsCont .formCont .socialLinks .inst{
+    margin-top: 30px;
+    background-image: url("images/inst.png");
+}
+.contactsCont .formCont .socialLinks .socLink:hover{
+    background: #c0392b;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contactsCont .formCont .socialLinks .vk:hover{
+    background-image: url("images/vkHover2.png");
+}
+.contactsCont .formCont .socialLinks .fb:hover{
+    background-image: url("images/fbHover2.png");
+}
+.contactsCont .formCont .socialLinks .inst:hover{
+    background-image: url("images/instHover2.png");
+}
+.contactsCont .formCont .form{
+    color: #c0392b;
+    font-size: 48px;
+    margin: 25px 0 0 40px;
+    width: 80%;
+}
+.contactsCont .formCont .form input[type="text"],[type="email"]{
+    border-bottom: 3px solid #c0392b;
+    height: 55px;
+    font-size: 36px;
+    margin-top: 40px;
+}
+.contactsCont .formCont .form .name{
+    margin-right: 30px;
+    width: 40%;
+}
+.contactsCont .formCont .form .email{
+    width: 55%;
+}
+.contactsCont .formCont .form .text{
+    width: 98.5%;
+}
+.contactsCont .formCont .form input[type="button"]{
+    width: 170px;
+    height: 70px;
+    color: #c0392b;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 30px 0 30px 75%;
+    text-align: center;
+    cursor: pointer;
+    border: #c0392b solid 3px;
+}
+.contactsCont .formCont .form input[type="button"]:hover{
+    background: #c0392b;
+    color: #f9f9f9;
+}
+.warning{
+    font-size: 20px;
+    position: absolute;
+    border: 1px solid #c0392b;
+    display: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

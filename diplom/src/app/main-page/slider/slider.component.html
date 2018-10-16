@@ -1,0 +1,15 @@
+<div class="slider">
+  <div class="arrow arrowLeft" (click)="slideLeft()"></div>
+  <div class="arrow arrowRight" (click)="slideRight()"></div>
+  <div class="container">
+    <div class="mover">
+      <div class="slide" *ngFor="let slide of slides" [style.backgroundImage]="'url('+ slide.url +')'">
+        <div class="textCont">
+          <p>{{slide.name}}</p>
+          <p>{{slide.date}}</p>
+          <a routerLink="/album/{{slide.album_id}}">ПОДРОБНЕЕ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

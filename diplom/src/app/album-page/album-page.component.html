@@ -1,0 +1,22 @@
+<div class="mainCont">
+    <div class="albumName" [style.backgroundImage]="'url('+ albumPhotos[0].url +')'">
+        <div class="caption">
+            <div class="lines left"></div>
+            <p>{{albumPhotos[0].name}}</p>
+            <div class="lines right"></div>
+        </div>
+        <p class="date">{{albumPhotos[0].date}}</p>
+    </div>
+    <div class="photosCont" (click)="viewPhoto($event)">
+        <a *ngFor="let photo of albumPhotos; let i = index" class="previewPhoto"
+           [style.backgroundImage]="'url('+ photo.url +')'">
+        </a>
+        <app-photo-page [photoToShow]="activePhoto"></app-photo-page>
+    </div>
+    <div class="footer" [style.backgroundImage]="'url('+ albumPhotos[0].url +')'">
+        <div class="textCont">
+            <p>Photographer Stanislav Gubkin</p>
+            <p class="year">2018</p>
+        </div>
+    </div>
+</div>
